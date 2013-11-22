@@ -177,6 +177,9 @@
                 'libraries': [ '-Wl,-soname,libuv.so.0.11' ],
               },
             }],
+            ['OS=="android"', {
+              'cflags!': [ '-pedantic' ],
+            }],
           ],
         }],
         [ 'OS in "linux mac android"', {
