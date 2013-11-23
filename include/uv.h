@@ -80,6 +80,10 @@ extern "C" {
   XX(EAI_SERVICE, "service not available for socket type")                    \
   XX(EAI_SOCKTYPE, "socket type not supported")                               \
   XX(EAI_SYSTEM, "system error")                                              \
+  XX(EAI_BADHINTS, "invalid value for hints")                                 \
+  XX(EAI_PROTOCOL, "resolved protocol is unknown")                            \
+  XX(EAI_OVERFLOW, "argument buffer overflow")                                \
+  XX(EAI_MAX, "unknown addrinfo error")                                       \
   XX(EALREADY, "connection already in progress")                              \
   XX(EBADF, "bad file descriptor")                                            \
   XX(EBUSY, "resource busy or locked")                                        \

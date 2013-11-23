@@ -433,6 +433,18 @@ int uv__getaddrinfo_translate_error(int sys_err) {
 #if defined(EAI_SYSTEM)
   case EAI_SYSTEM: return UV_EAI_SYSTEM;
 #endif
+#if defined(EAI_BADHINTS)
+  case EAI_BADHINTS: return UV_EAI_BADHINTS;
+#endif
+#if defined(EAI_PROTOCOL)
+  case EAI_PROTOCOL: return UV_EAI_PROTOCOL;
+#endif
+#if defined(EAI_OVERFLOW)
+  case EAI_OVERFLOW: return UV_EAI_OVERFLOW;
+#endif
+#if defined(EAI_MAX)
+  case EAI_MAX: return UV_EAI_MAX;
+#endif
   }
   assert(!"unknown EAI_* error code");
   abort();
